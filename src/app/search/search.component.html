@@ -1,0 +1,14 @@
+<p>Star Wars Assessment</p>
+<form (ngSubmit)='fetchData()'>
+    <select [formControl]='dropdown' id='dropdown'>
+      <option></option>
+      <option value='people'>People</option>
+      <option value='starships'>Starships</option>
+      <option value='films'>Films</option>
+    </select>
+    <input id='search' [formControl]='input' type='search' placeholder='Search'>
+    <button type='submit'>Search</button>
+  </form>
+<div class="results">
+  {{results}}
+</div>
